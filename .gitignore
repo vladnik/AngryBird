@@ -1,4 +1,13 @@
+# Cocos JS libraries
 /cocos2d
 /extensions
+
+# Node modules for development
 /node_modules
+
+# Generates resources
 /Resources/res
+
+# Xcode user's settings
+/proj.ios/AngryBird.xcodeproj/project.xcworkspace
+/proj.ios/AngryBird.xcodeproj/xcuserdata
