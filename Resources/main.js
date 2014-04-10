@@ -49,7 +49,7 @@ var cocos2dApp = cc.Application.extend({
         searchPaths.push("res");
         cc.FileUtils.getInstance().setSearchPaths(searchPaths);
 
-        resDirOrders.push("/");
+        resDirOrders.push("");
         // var platform = cc.Application.getInstance().getTargetPlatform();
         // if (platform == cc.TARGET_PLATFORM.MOBILE_BROWSER) {
         //     resDirOrders.push("HD");

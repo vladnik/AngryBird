@@ -25,17 +25,12 @@
  ****************************************************************************/
 
 var MyLayer = cc.Layer.extend({
-  isMouseDown:false,
-  helloImg:null,
-  helloLabel:null,
-  circle:null,
-  sprite:null,
-
   init:function () {
     //////////////////////////////
     // 1. super init first
     this._super();
 
+    // Adding MainScene
     var node = cc.BuilderReader.load("MainScene.ccbi");
     this.addChild(node);
     this.setPosition(cc.p(0, 0));

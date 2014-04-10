@@ -55,7 +55,7 @@ cc.FileUtils.getInstance().setSearchPaths(searchPaths);
 
 var platform = cc.Application.getInstance().getTargetPlatform();
 
-resDirOrders.push("/");
+resDirOrders.push("");
 // if (platform == cc.TARGET_PLATFORM.MOBILE_BROWSER) {
 //     if (screenSize.height > 450) {
 //         resDirOrders.push("HD");

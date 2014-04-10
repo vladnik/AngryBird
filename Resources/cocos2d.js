@@ -40,7 +40,8 @@
         appFiles:[
             'src/resource.js',
             'src/myApp.js',
-            'src/MainScene.js'
+            'src/MainScene.js',
+            'src/Level.js'
         ]
     };
 

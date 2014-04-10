@@ -5,6 +5,8 @@ var g_resources = [
   // {src:s_CloseSelected}
 
   //plist
+  {src: "Sprites.plist"},
+  {src: "ccbResources/ccbDefaultImages.plist"}
 
   //fnt
 

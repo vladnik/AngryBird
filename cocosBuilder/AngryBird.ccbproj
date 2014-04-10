@@ -19,13 +19,33 @@
 	<key>flattenPaths</key>
 	<false/>
 	<key>generatedSpriteSheets</key>
-	<dict/>
+	<dict>
+		<key>Sprites</key>
+		<dict>
+			<key>compress</key>
+			<true/>
+			<key>dither</key>
+			<true/>
+			<key>ditherAndroid</key>
+			<true/>
+			<key>ditherHTML5</key>
+			<true/>
+			<key>isDirty</key>
+			<false/>
+			<key>textureFileFormat</key>
+			<integer>0</integer>
+			<key>textureFileFormatAndroid</key>
+			<integer>0</integer>
+			<key>textureFileFormatHTML5</key>
+			<integer>0</integer>
+		</dict>
+	</dict>
 	<key>javascriptBased</key>
 	<true/>
 	<key>javascriptMainCCB</key>
 	<string>MainScene</string>
 	<key>needRepublish</key>
-	<true/>
+	<false/>
 	<key>onlyPublishCCBs</key>
 	<false/>
 	<key>publishDirectory</key>
@@ -45,7 +65,7 @@
 	<key>publishResolutionHTML5_scale</key>
 	<integer>1</integer>
 	<key>publishResolutionHTML5_width</key>
-	<integer>480</integer>
+	<integer>750</integer>
 	<key>publishResolution_</key>
 	<true/>
 	<key>publishResolution_hd</key>
