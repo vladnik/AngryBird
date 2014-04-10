@@ -31,6 +31,7 @@ var MyLayer = cc.Layer.extend({
     this._super();
 
     // Adding MainScene
+    cc.BuilderReader.setResolutionScale(0.25);
     var node = cc.BuilderReader.load("MainScene.ccbi");
     this.addChild(node);
     this.setPosition(cc.p(0, 0));
