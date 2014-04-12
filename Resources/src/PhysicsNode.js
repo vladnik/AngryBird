@@ -2,6 +2,7 @@
 // PhysicsNode class
 //
 var PhysicsNode = function(node){
+  // Initialize space
   this.node = node;
   node.space = new cp.Space();
   var space = node.space;
@@ -12,13 +13,13 @@ var PhysicsNode = function(node){
   space.sleepTimeThreshold = 0.5;
 
   /////////// DEBUG /////////
-  node._debugNode = cc.PhysicsDebugNode.create( node.space );
-  node._debugNode.setVisible( true );
-  node.addChild( node._debugNode );
+  // node._debugNode = cc.PhysicsDebugNode.create( node.space );
+  // node._debugNode.setVisible( true );
+  // node.addChild( node._debugNode );
   //////////////////////////
-  
+    
+  // Iterate children
   var children = node.getChildren();
-  window.vasia = children[0];
   for (var i=0 ;i < children.length; i++) {
     // Get child attributes
     var child = children[i];
@@ -30,24 +31,24 @@ var PhysicsNode = function(node){
     if (height <= 0 || width <=0) {
       continue;
     }
-    var mass = width * height * 1/1000;
 
     // Build body
+    var mass = width * height * 1/1000;
     var body = new cp.Body(mass, cp.momentForBox(mass, width, height));
     space.addBody(body);
 
     // Build shape
     var shape = space.addShape(new cp.BoxShape(body, width, height));
-    shape.setFriction(0.3);
+    shape.setFriction(0.5);
     shape.setElasticity(0.3);
 
     // Add sprite
-    var sprite = cc.PhysicsSprite.createWithSpriteFrameName('Sprites/shape-0.png');
+    var frame = cc.SpriteFrame.createWithTexture(child.getTexture(), child.getTextureRect(),child._rectRotated, 0, child._rect._size);
+    var sprite = cc.PhysicsSprite.createWithSpriteFrame(frame);
     sprite.setBody(body);
     sprite.setScale(scale);
     sprite.setPosition(pos);
     children[i] = sprite;
-    if (i === 0) {window.sprite = sprite;}
   }
 
   // Update scene
@@ -58,4 +59,8 @@ var PhysicsNode = function(node){
 };
 
 PhysicsNode.prototype.addGround = function(ground) {
+  var space = this.node.space;
+  var floor = space.addShape(new cp.SegmentShape(space.staticBody, cp.v(0, 30), cp.v(750, 30), 0));
+  floor.setElasticity(1);
+  floor.setFriction(1);
 };

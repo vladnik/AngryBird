@@ -469,7 +469,7 @@
 						<key>customClass</key>
 						<string></string>
 						<key>displayName</key>
-						<string>shape-0</string>
+						<string>block</string>
 						<key>memberVarAssignmentName</key>
 						<string></string>
 						<key>memberVarAssignmentType</key>
@@ -532,8 +532,6 @@
 								</array>
 							</dict>
 						</array>
-						<key>selected</key>
-						<true/>
 					</dict>
 					<dict>
 						<key>baseClass</key>
@@ -543,7 +541,7 @@
 						<key>customClass</key>
 						<string></string>
 						<key>displayName</key>
-						<string>shape-2</string>
+						<string>block1</string>
 						<key>memberVarAssignmentName</key>
 						<string></string>
 						<key>memberVarAssignmentType</key>
@@ -615,7 +613,7 @@
 						<key>customClass</key>
 						<string></string>
 						<key>displayName</key>
-						<string>shape-2</string>
+						<string>block1</string>
 						<key>memberVarAssignmentName</key>
 						<string></string>
 						<key>memberVarAssignmentType</key>
@@ -687,7 +685,7 @@
 						<key>customClass</key>
 						<string></string>
 						<key>displayName</key>
-						<string>shape-3</string>
+						<string>wood</string>
 						<key>memberVarAssignmentName</key>
 						<string></string>
 						<key>memberVarAssignmentType</key>
@@ -759,7 +757,7 @@
 						<key>customClass</key>
 						<string></string>
 						<key>displayName</key>
-						<string>shape-1</string>
+						<string>roof</string>
 						<key>memberVarAssignmentName</key>
 						<string></string>
 						<key>memberVarAssignmentType</key>
@@ -867,6 +865,8 @@
 						<false/>
 					</dict>
 				</array>
+				<key>selected</key>
+				<true/>
 			</dict>
 			<dict>
 				<key>baseClass</key>
