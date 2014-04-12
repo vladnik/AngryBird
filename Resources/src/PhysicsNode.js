@@ -42,11 +42,11 @@ var PhysicsNode = function(node){
     shape.setElasticity(0.3);
 
     // Add sprite
-    var sprite = new cc.PhysicsSprite(cc.rect(0,0,480,320));
-    sprite.setTexture(child.getTexture());
+    var sprite = cc.PhysicsSprite.createWithSpriteFrameName('Sprites/shape-0.png');
     sprite.setBody(body);
+    sprite.setScale(scale);
     sprite.setPosition(pos);
-    // children[i] = sprite;
+    children[i] = sprite;
     if (i === 0) {window.sprite = sprite;}
   }
 
