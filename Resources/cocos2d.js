@@ -29,7 +29,7 @@
     var c = {
         COCOS2D_DEBUG:2, //0 to turn debug off, 1 for basic debug, and 2 for full debug
         box2d:false,
-        chipmunk:false,
+        chipmunk:true,
         showFPS:true,
         loadExtension:true,
         frameRate:60,
@@ -41,7 +41,8 @@
             'src/resource.js',
             'src/myApp.js',
             'src/MainScene.js',
-            'src/Level.js'
+            'src/Level.js',
+            'src/PhysicsNode.js'
         ]
     };
 

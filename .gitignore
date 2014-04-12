@@ -1,6 +1,7 @@
 # Cocos JS libraries
 /cocos2d
 /extensions
+/external
 
 # Node modules for development
 /node_modules

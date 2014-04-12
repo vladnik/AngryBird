@@ -67,10 +67,10 @@
 						<string>ScaleLock</string>
 						<key>value</key>
 						<array>
-							<real>1</real>
-							<real>1</real>
-							<false/>
-							<integer>1</integer>
+							<real>0.25</real>
+							<real>0.25</real>
+							<true/>
+							<integer>0</integer>
 						</array>
 					</dict>
 					<dict>
@@ -176,7 +176,7 @@
 				<key>displayName</key>
 				<string>launcher</string>
 				<key>memberVarAssignmentName</key>
-				<string>_launcher</string>
+				<string>launcher</string>
 				<key>memberVarAssignmentType</key>
 				<integer>1</integer>
 				<key>properties</key>
@@ -211,10 +211,10 @@
 						<string>ScaleLock</string>
 						<key>value</key>
 						<array>
-							<real>1</real>
-							<real>1</real>
-							<false/>
-							<integer>1</integer>
+							<real>0.25</real>
+							<real>0.25</real>
+							<true/>
+							<integer>0</integer>
 						</array>
 					</dict>
 					<dict>
@@ -271,7 +271,7 @@
 						<key>value</key>
 						<array>
 							<real>283</real>
-							<real>81</real>
+							<real>60</real>
 							<integer>0</integer>
 						</array>
 					</dict>
@@ -293,10 +293,10 @@
 						<string>ScaleLock</string>
 						<key>value</key>
 						<array>
-							<real>1</real>
-							<real>1</real>
-							<false/>
-							<integer>1</integer>
+							<real>0.25</real>
+							<real>0.25</real>
+							<true/>
+							<integer>0</integer>
 						</array>
 					</dict>
 					<dict>
@@ -372,8 +372,8 @@
 						<string>Size</string>
 						<key>value</key>
 						<array>
-							<real>480</real>
 							<real>400</real>
+							<real>250</real>
 							<integer>0</integer>
 						</array>
 					</dict>
@@ -455,86 +455,12 @@
 						</array>
 					</dict>
 				</array>
-				<key>selected</key>
-				<true/>
 			</dict>
 			<dict>
 				<key>baseClass</key>
 				<string>CCNode</string>
 				<key>children</key>
 				<array>
-					<dict>
-						<key>baseClass</key>
-						<string>CCSprite</string>
-						<key>children</key>
-						<array/>
-						<key>customClass</key>
-						<string></string>
-						<key>displayName</key>
-						<string>ground</string>
-						<key>memberVarAssignmentName</key>
-						<string></string>
-						<key>memberVarAssignmentType</key>
-						<integer>0</integer>
-						<key>properties</key>
-						<array>
-							<dict>
-								<key>name</key>
-								<string>position</string>
-								<key>type</key>
-								<string>Position</string>
-								<key>value</key>
-								<array>
-									<real>359</real>
-									<real>16</real>
-									<integer>0</integer>
-								</array>
-							</dict>
-							<dict>
-								<key>name</key>
-								<string>anchorPoint</string>
-								<key>type</key>
-								<string>Point</string>
-								<key>value</key>
-								<array>
-									<real>0.5</real>
-									<real>0.5</real>
-								</array>
-							</dict>
-							<dict>
-								<key>name</key>
-								<string>scale</string>
-								<key>type</key>
-								<string>ScaleLock</string>
-								<key>value</key>
-								<array>
-									<real>1</real>
-									<real>1</real>
-									<false/>
-									<integer>1</integer>
-								</array>
-							</dict>
-							<dict>
-								<key>name</key>
-								<string>ignoreAnchorPointForPosition</string>
-								<key>type</key>
-								<string>Check</string>
-								<key>value</key>
-								<false/>
-							</dict>
-							<dict>
-								<key>name</key>
-								<string>displayFrame</string>
-								<key>type</key>
-								<string>SpriteFrame</string>
-								<key>value</key>
-								<array>
-									<string></string>
-									<string>ground.png</string>
-								</array>
-							</dict>
-						</array>
-					</dict>
 					<dict>
 						<key>baseClass</key>
 						<string>CCSprite</string>
@@ -580,10 +506,10 @@
 								<string>ScaleLock</string>
 								<key>value</key>
 								<array>
-									<real>1</real>
-									<real>1</real>
-									<false/>
-									<integer>1</integer>
+									<real>0.25</real>
+									<real>0.25</real>
+									<true/>
+									<integer>0</integer>
 								</array>
 							</dict>
 							<dict>
@@ -606,6 +532,8 @@
 								</array>
 							</dict>
 						</array>
+						<key>selected</key>
+						<true/>
 					</dict>
 					<dict>
 						<key>baseClass</key>
@@ -652,10 +580,10 @@
 								<string>ScaleLock</string>
 								<key>value</key>
 								<array>
-									<real>1</real>
-									<real>1</real>
-									<false/>
-									<integer>1</integer>
+									<real>0.25</real>
+									<real>0.25</real>
+									<true/>
+									<integer>0</integer>
 								</array>
 							</dict>
 							<dict>
@@ -724,10 +652,10 @@
 								<string>ScaleLock</string>
 								<key>value</key>
 								<array>
-									<real>1</real>
-									<real>1</real>
-									<false/>
-									<integer>1</integer>
+									<real>0.25</real>
+									<real>0.25</real>
+									<true/>
+									<integer>0</integer>
 								</array>
 							</dict>
 							<dict>
@@ -796,10 +724,10 @@
 								<string>ScaleLock</string>
 								<key>value</key>
 								<array>
-									<real>1</real>
-									<real>1</real>
-									<false/>
-									<integer>1</integer>
+									<real>0.25</real>
+									<real>0.25</real>
+									<true/>
+									<integer>0</integer>
 								</array>
 							</dict>
 							<dict>
@@ -868,10 +796,10 @@
 								<string>ScaleLock</string>
 								<key>value</key>
 								<array>
-									<real>1</real>
-									<real>1</real>
-									<false/>
-									<integer>1</integer>
+									<real>0.25</real>
+									<real>0.25</real>
+									<true/>
+									<integer>0</integer>
 								</array>
 							</dict>
 							<dict>
@@ -937,6 +865,78 @@
 						<string>Check</string>
 						<key>value</key>
 						<false/>
+					</dict>
+				</array>
+			</dict>
+			<dict>
+				<key>baseClass</key>
+				<string>CCSprite</string>
+				<key>children</key>
+				<array/>
+				<key>customClass</key>
+				<string></string>
+				<key>displayName</key>
+				<string>ground</string>
+				<key>memberVarAssignmentName</key>
+				<string>_ground</string>
+				<key>memberVarAssignmentType</key>
+				<integer>1</integer>
+				<key>properties</key>
+				<array>
+					<dict>
+						<key>name</key>
+						<string>position</string>
+						<key>type</key>
+						<string>Position</string>
+						<key>value</key>
+						<array>
+							<real>358</real>
+							<real>16</real>
+							<integer>0</integer>
+						</array>
+					</dict>
+					<dict>
+						<key>name</key>
+						<string>anchorPoint</string>
+						<key>type</key>
+						<string>Point</string>
+						<key>value</key>
+						<array>
+							<real>0.5</real>
+							<real>0.5</real>
+						</array>
+					</dict>
+					<dict>
+						<key>name</key>
+						<string>scale</string>
+						<key>type</key>
+						<string>ScaleLock</string>
+						<key>value</key>
+						<array>
+							<real>0.25</real>
+							<real>0.25</real>
+							<true/>
+							<integer>0</integer>
+						</array>
+					</dict>
+					<dict>
+						<key>name</key>
+						<string>ignoreAnchorPointForPosition</string>
+						<key>type</key>
+						<string>Check</string>
+						<key>value</key>
+						<false/>
+					</dict>
+					<dict>
+						<key>name</key>
+						<string>displayFrame</string>
+						<key>type</key>
+						<string>SpriteFrame</string>
+						<key>value</key>
+						<array>
+							<string></string>
+							<string>ground.png</string>
+						</array>
 					</dict>
 				</array>
 			</dict>
@@ -1033,7 +1033,7 @@
 			<key>name</key>
 			<string>HTML 5 Landscape</string>
 			<key>scale</key>
-			<real>0.25</real>
+			<real>1</real>
 			<key>width</key>
 			<integer>750</integer>
 		</dict>
