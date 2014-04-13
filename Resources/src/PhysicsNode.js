@@ -44,8 +44,8 @@ var PhysicsNode = function(node){
 
     // Add sprite
     window.vasia = child;
-    var frame = cc.SpriteFrame.createWithTexture(child.getTexture(), child.getTextureRect(),
-      child.isTextureRectRotated(), 0, child.getContentSize());
+    var frame = cc.SpriteFrame.createWithTexture(child.getTexture(), child.getTextureRect())
+    frame.setRotated(child.isTextureRectRotated());
     var sprite = cc.PhysicsSprite.createWithSpriteFrame(frame);
     sprite.setBody(body);
     sprite.setScale(scale);
