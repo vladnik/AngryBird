@@ -200,7 +200,7 @@
 						<string>Point</string>
 						<key>value</key>
 						<array>
-							<real>0.47437959909439087</real>
+							<real>0.5</real>
 							<real>0.048515625298023224</real>
 						</array>
 					</dict>
@@ -247,6 +247,8 @@
 						</array>
 					</dict>
 				</array>
+				<key>selected</key>
+				<true/>
 			</dict>
 			<dict>
 				<key>baseClass</key>
@@ -865,8 +867,6 @@
 						<false/>
 					</dict>
 				</array>
-				<key>selected</key>
-				<true/>
 			</dict>
 			<dict>
 				<key>baseClass</key>

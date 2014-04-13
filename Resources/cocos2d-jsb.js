@@ -31,7 +31,9 @@ require("jsb.js");
 var appFiles = [
     'src/resource.js',
     'src/myApp.js',
-    'src/MainScene.js'
+    'src/MainScene.js',
+    'src/Level.js',
+    'src/PhysicsNode.js'
 ];
 
 cc.dumpConfig();
