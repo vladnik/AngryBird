@@ -45,9 +45,9 @@ for (var i = 0; i < appFiles.length; i++) {
 var director = cc.Director.getInstance();
 
 //var screenSize = cc.EGLView.getInstance().getFrameSize();
-var screenSize = cc.size(320,480)
-var resourceSize = cc.size(800, 450);
-var designSize = cc.size(800, 450);
+var screenSize = cc.size(1136, 640)
+var resourceSize = cc.size(1136, 640);
+var designSize = cc.size(1136, 640);
 
 var searchPaths = [];
 var resDirOrders = [];

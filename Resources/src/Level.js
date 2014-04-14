@@ -17,7 +17,7 @@ Level.prototype.launchBird = function(id) {
   var directionVector = cc.p(Math.sin(rotation), Math.cos(rotation))
   var ballOffset = cc.pMult(directionVector, 70);
   var ball = cc.PhysicsSprite.createWithSpriteFrameName("Sprites/bird.png");
-  ball.setScale(0.25);
+  ball.setScale(0.5);
 
   var radius = ball.getContentSize().width * ball.getScale() / 2
   var mass = Math.PI * Math.pow(radius,2) * 1/1000;
@@ -32,6 +32,6 @@ Level.prototype.launchBird = function(id) {
   ball.setBody(body);
   this._physicsNode.addChild(ball);
 
-  var force = cc.pMult(directionVector, 5000);
+  var force = cc.pMult(directionVector, 50000);
   body.applyForce(force, cp.v(0, 0));
 };

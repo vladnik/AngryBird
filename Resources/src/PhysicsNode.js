@@ -20,6 +20,7 @@ var PhysicsNode = function(node){
     
   // Iterate children
   var children = node.getChildren();
+  var p_objects = [];
   for (var i=0 ;i < children.length; i++) {
     // Get child attributes
     var child = children[i];
@@ -32,26 +33,29 @@ var PhysicsNode = function(node){
       continue;
     }
 
+    // Add sprite
+    var frame = cc.SpriteFrame.createWithTexture(child.getTexture(), child.getTextureRect())
+    frame.setRotated(child.isTextureRectRotated());
+    var sprite = cc.PhysicsSprite.createWithSpriteFrame(frame);
+    sprite.setScale(scale);
+
     // Build body
     var mass = width * height * 1/1000;
-    var body = new cp.Body(mass, cp.momentForBox(mass, width, height));
-    space.addBody(body);
+    var body = space.addBody(new cp.Body(mass, cp.momentForBox(mass, width, height)));
+    body.setPos(cc.p(pos.x, pos.y))
 
     // Build shape
     var shape = space.addShape(new cp.BoxShape(body, width, height));
     shape.setFriction(0.5);
     shape.setElasticity(0.3);
 
-    // Add sprite
-    window.vasia = child;
-    var frame = cc.SpriteFrame.createWithTexture(child.getTexture(), child.getTextureRect())
-    frame.setRotated(child.isTextureRectRotated());
-    var sprite = cc.PhysicsSprite.createWithSpriteFrame(frame);
     sprite.setBody(body);
-    sprite.setScale(scale);
-    sprite.setPosition(pos);
-    children[i] = sprite;
+    p_objects.push(sprite);
   }
+  node.removeAllChildren();
+  for (var i=0 ;i < p_objects.length; i++) {
+    node.addChild(p_objects[i]);
+  };
 
   // Update scene
   node.update = function(dt) {
@@ -62,7 +66,7 @@ var PhysicsNode = function(node){
 
 PhysicsNode.prototype.addGround = function(ground) {
   var space = this.node.space;
-  var floor = space.addShape(new cp.SegmentShape(space.staticBody, cp.v(0, 30), cp.v(750, 30), 0));
+  var floor = space.addShape(new cp.SegmentShape(space.staticBody, cp.v(0, 30), cp.v(2000, 80), 0));
   floor.setElasticity(1);
   floor.setFriction(1);
 };
